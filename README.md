@@ -1,4 +1,6 @@
-## Unity Plugins
+# Unity Plugins
+
+## 介绍
 
 Unity可以开发两种插件，Managed plugins和Native plugins。
 
@@ -22,7 +24,9 @@ Assets/Plugins/Android/(x86 or armeabi or armeabi-v7a)	只跟Android兼容，如
 Assets/Plugins/iOS	                                    只跟iOS兼容
 ```
 
-## 托管插件（Managed plugins）
+## 插件分类
+
+### 托管插件（Managed plugins）
 
 通常情况下，我们直接使用脚本实现相关功能，然后由Unity编译成目标可执行文件。但有
 时我们想在外部把脚本编译成DLL，然后放在Unity中使用。这个DLL就是这里所说的托管式
@@ -31,7 +35,7 @@ Assets/Plugins/iOS	                                    只跟iOS兼容
 托管插件相对来说比较常见，也是项目开发中比较常见的方式，文章结尾的unity-plugins-development
 项目也给出了简单的托管插件的案例，敬请参考。
 
-## 原生插件（Native Plugins）
+### 原生插件（Native Plugins）
 
 原生插件一般采用C,C++,Objective-C等等编写，Unity允许游戏代码来访问这些原生插件中的函数，
 允许Unity和一些中间件库或者已有的C/C++进行整合和。
@@ -55,23 +59,23 @@ Assets/Plugins/iOS	                                    只跟iOS兼容
   
 	使用Java开发的Android库，支持Android相关特性的插件，如震屏，手机电量，信号强度等。
 
-## Demo
+## 插件实践
 
-+ src/managed
++ 托管插件
+	- 插件源码: src/managed
+	- 插件测试：sample/Assets/Scene/Managed/Managed.unity
 
-	托管插件简单实现。
++ 原生插件C
+	- 插件源码: src/native/c
+	- 插件测试：sample/Assets/Scene/Native/C.unity
 
-+ src/native/c
++ 原生系统插件iOS
+	- 插件源码: src/native/system/ios
+	- 插件测试：sample/Assets/Scene/Native/System.unity
 
-	C原生插件，实现了C#调用C和C调用C#，即相互调用。
-
-+ src/native/system/android
-
-	Android系统原生插件。
-
-+ src/native/system/ios
-
-	iOS系统原生插件。
++ 原生系统插件Android
+	- 插件源码: src/native/system/android
+	- 插件测试：sample/Assets/Scene/Native/System.unity
 
 ## 注意事项
 
