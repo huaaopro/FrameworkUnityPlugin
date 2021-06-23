@@ -32,6 +32,9 @@ public class NativeSystemDemo : MonoBehaviour
 
     private void OnGUI()
     {
+        GUI.color = Color.magenta;
+        GUI.skin.button.fontSize = 60;
+        
         GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height));
 
         int retHeight = 100;

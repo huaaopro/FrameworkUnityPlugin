@@ -22,6 +22,9 @@ public class Launcher : MonoBehaviour
 
     private void OnGUI()
     {
+        GUI.color = Color.magenta;
+        GUI.skin.button.fontSize = 60;
+        
         GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height));
 
         if (GUILayout.Button("Demo Managed", GUILayout.Height(Screen.height / 3.0f))) {

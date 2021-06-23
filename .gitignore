@@ -54,3 +54,4 @@ dkms.conf
 src/managed/common/common/obj
 sample/Library/
 sample/Temp/
+sample/obj/
