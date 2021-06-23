@@ -6,6 +6,7 @@
 *.ko
 *.obj
 *.elf
+*.idea
 
 # Linker output
 *.ilk
@@ -50,3 +51,4 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+src/managed/common/common/obj
