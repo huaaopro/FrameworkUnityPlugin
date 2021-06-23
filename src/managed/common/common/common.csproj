@@ -59,6 +59,7 @@
         <Compile Include="Singleton\SingletonSingleMono.cs" />
         <Compile Include="Utility\Utility.Convert.cs" />
         <Compile Include="Utility\Utility.Marshal.cs" />
+        <Compile Include="Utility\Utility.MathX.cs" />
         <Compile Include="Utility\Utility.Text.cs" />
         <Compile Include="Utility\Utitity.cs" />
     </ItemGroup>
