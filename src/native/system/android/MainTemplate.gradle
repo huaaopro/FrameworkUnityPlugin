@@ -134,6 +134,6 @@ android {
 }**SPLITS_VERSION_CODE****REPOSITORIES****SOURCE_BUILD_SETUP**
 
 task copyJavaToUnity(type: Copy) {
-    from 'src/main/java/com/cyou/cz'
-    into '../../Assets/Plugins/ProjectCZ/Android/java/com/cyou/cz'
+    from 'src/main/java/com/huaaopro/example'
+    into '../../Assets/Plugins/System/Android/java/com/huaao/example'
 }
